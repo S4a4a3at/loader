@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react loader</title>
+    <style>
+        .main-bg-container {
+            height: 100vh;
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .first-circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 5px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: animation1 0.7s infinite alternate 1s linear;
+        }
+        .second-circle {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            border: 3px solid white;
+            animation: animation2 0.7s  infinite alternate ;
+        }
+        @keyframes animation1 {
+            0% {
+
+            }
+            100% {
+                height: 0vh;
+                width: 0vh;
+            }
+        }
+        @keyframes animation2 {
+            0% {
+                
+            }
+            100% {
+                height: 0vh;
+                width: 0vh;
+                
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0px;">
+    <div class="main-bg-container">
+        <div class="first-circle">
+            <div class="second-circle"></div>
+        </div>
+    </div>
+</body>
+</html>
